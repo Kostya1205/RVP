@@ -1,0 +1,57 @@
+.modal {
+
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Стили для таблицы */
+#table-id {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#table-id th, #table-id td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#table-id th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.modal label, .modal input, .modal button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal button {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}

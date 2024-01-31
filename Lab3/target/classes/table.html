@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+</head>
+    <body>
+    <header>
+        <ul class="nav-links">
+            <li><a href="/about">О себе</a></li>
+            <li><a href="/exercise">Задание</a></li>
+            <li><a href="/table">Таблица</a></li>
+        </ul>
+    </header>
+        <h3>Таблица книг</h3>
+        <table id="table-id">
+            <tr>
+                <td>Название</td>
+                <td>Цена</td>
+                <td>Объём</td>
+                <td>Удаление</td>
+                <td>Изменение</td>
+            </tr>
+        </table>
+        <button onclick="openModal()">Создать</button>
+
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <label for="name">Название:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="price">Цена:</label>
+            <input type="text" id="price" required><br>
+
+            <label for="volume">Объём:</label>
+            <input type="text" id="volume" required><br>
+
+            <button  id="button-modal-save">Сохранить</button>
+            <button  id="button-modal-edit">Изменить</button>
+
+        </div>
+        <script src="/js/table.js"></script>
+    </body>
+</html>
